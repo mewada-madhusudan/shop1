@@ -17,7 +17,6 @@ echo "Password ";
 echo form_password('pword', '');
 echo "<br>";
 
-
 echo form_submit('submit', 'Submit');
 
 echo form_close();

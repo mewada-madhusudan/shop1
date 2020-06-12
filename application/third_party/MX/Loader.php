@@ -90,7 +90,8 @@ class MX_Loader extends CI_Loader
 	}
 
 	/** Load the database drivers **/
-	public function database($params = 'default', $return = FALSE, $active_record = NULL) {
+	public function database($params = 'postgres://shmqxspdadkeis:9c9190a73676ff7685171fbb3ecd6c49760da34e6edf53551009f55883fbe3da@ec2-34-193-117-204.compute-1.amazonaws.com:5432/d1hkmibko6mdei
+', $return = FALSE, $active_record = NULL) {
 		
 		if (class_exists('CI_DB', FALSE) AND $return == FALSE AND $active_record == NULL AND isset(CI::$APP->db) AND is_object(CI::$APP->db)) 
 			return;

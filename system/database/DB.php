@@ -140,7 +140,7 @@ function &DB($params = '', $active_record_override = NULL)
 	require_once(BASEPATH.'database/drivers/postgre/postgre_driver.php');
 
 	// Instantiate the DB adapter
-	$driver = 'CI_DB_'.$params['dbdriver'].'_driver';
+	$driver = 'CI_DB_postgre_driver';
 	$DB = new $driver($params);
 
 	if ($DB->autoinit == TRUE)

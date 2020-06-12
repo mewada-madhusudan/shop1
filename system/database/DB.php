@@ -74,10 +74,11 @@ function &DB($params = '', $active_record_override = NULL)
 
 		$params = array(
 							'dbdriver'	=> $dns['scheme'],
-							'hostname'	=> (isset($dns['host'])) ? rawurldecode($dns['host']) : '',
-							'username'	=> (isset($dns['user'])) ? rawurldecode($dns['user']) : '',
-							'password'	=> (isset($dns['pass'])) ? rawurldecode($dns['pass']) : '',
-							'database'	=> (isset($dns['path'])) ? rawurldecode(substr($dns['path'], 1)) : ''
+							'hostname'	=> (isset($dns['host'])) ? rawurldecode($dns['host']) : 'ec2-34-193-117-204.compute-1.amazonaws.com
+',
+							'username'	=> (isset($dns['user'])) ? rawurldecode($dns['user']) : 'shmqxspdadkeis',
+							'password'	=> (isset($dns['pass'])) ? rawurldecode($dns['pass']) : '9c9190a73676ff7685171fbb3ecd6c49760da34e6edf53551009f55883fbe3da',
+							'database'	=> (isset($dns['path'])) ? rawurldecode(substr($dns['path'], 1)) : 'd1hkmibko6mdei'
 						);
 
 		// were additional config items set?
